@@ -10,7 +10,7 @@ using Newtonsoft.Json;
 using System.Data.SqlClient;
 using System.Collections.Generic;
 
-namespace systemintegrationFunctionApps
+namespace systemintegrationFunctionApps.AzureFuntions
 {
     public static class GetFromSql
     {
@@ -44,6 +44,7 @@ namespace systemintegrationFunctionApps
                                     temperature = float.Parse(sql_DataReader["Temperature"].ToString()),
                                     humidity = float.Parse(sql_DataReader["Humidity"].ToString()),
                                     epochtime = long.Parse(sql_DataReader["Epochtime"].ToString()),
+                                    id = int.Parse(sql_DataReader["id"].ToString())
                                   
                                 };
                                 deviceMessages.Add(deviceMessage);

@@ -10,7 +10,7 @@ using System;
 using System.Data.SqlClient;
 using Newtonsoft.Json;
 
-namespace systemintegrationFunctionApps
+namespace systemintegrationFunctionApps.AzureFuntions
 {
     public static class SaveToSql
     {
